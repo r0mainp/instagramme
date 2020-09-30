@@ -200,7 +200,6 @@ p{
         display: flex;
         flex-direction: column;
         border: 1px solid #D1D1D1;
-        overflow-y: scroll;
     }
     picture{
         width: 502px;
@@ -221,7 +220,7 @@ p{
         padding: 0.7rem 1rem;
         margin: 0;
         border-bottom: none;
-        
+
     }
     /*form end*/
 
@@ -233,8 +232,18 @@ p{
         padding-left: 0;
         padding-right: 0;
         border-top: 1px solid #D1D1D1;
+        overflow-y: scroll;
     }
-
+    .main__comment-section::-webkit-scrollbar {
+        width: 2px;
+      }
+      .main__comment-section::-webkit-scrollbar-track {
+        background: white;
+      }
+      .main__comment-section::-webkit-scrollbar-thumb {
+        background-color: #D1D1D1;
+        border-radius: 20px;
+      }
     /*comment section end*/
 /*Main End*/
 
