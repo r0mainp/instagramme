@@ -16,6 +16,7 @@ p{
     .page__header{
         position : fixed;
         width: 100%;
+        background-color: white;
     }
     .header__title{
         font-family: "Satisfy";
@@ -32,6 +33,9 @@ p{
 /*Main Start*/
     .page__main{
         padding-top: 50px;
+    }
+    .main__image{
+        width: 100%;
     }
 
     /*main-section Start*/
@@ -55,7 +59,7 @@ p{
     }
     .user-name__container{
         display: flex;
-        padding: 0 1rem;
+        padding: 0 0.5rem;
     }
     .user-name{
         font-weight: 700;
@@ -105,6 +109,21 @@ p{
         width: 100%;
     }
     /*form end*/
+
+    /*Comment section start*/
+    .main__comment-section{
+        padding: 0.5rem 1rem;
+
+    }
+    .comment-section__comment{
+    padding: 0.5rem 0;
+    }
+    .user-name--position{
+       float: left;
+       margin-right: 0.5rem;
+       
+    }
+    /*Comment section end*/
 
     /*main-section End*/
 
