@@ -155,6 +155,7 @@ p{
 
     transform: scale(1.2, 1.2);
 }
+
 .heart::after{
     content: "";
     width: 6px;
