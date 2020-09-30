@@ -8,27 +8,46 @@
     <link rel="icon" type="image/png" href="img/Logo.png" />
     <script src="https://kit.fontawesome.com/395d2606a5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Satisfy&display=swap"
+        rel="stylesheet">
 </head>
+<!-- srcset="img/small.png 360w,
+                        img/medium.png 601w,
+                        img/large.png 502w"
+
+                 sizes="(max-width: 768px) 360px,
+                        (max-width: 1000px) 601px,
+                        502px"-->
 
 <body>
     <div class="page">
         <header class="page__header">
             <h1 class="header__title">Instagramme</h1>
         </header>
-        <main>
-            <img src="" alt="" class="main__image">
+        <main class="page__main">
+            <picture>
+                <source srcset="img/small.png 360w" media="(max-width: 360px)">
+                <source srcset="img/medium.png 601w" media="(max-width: 601px)">
+                
+                <img src="img/large.png" alt=" Page main image" class="main__image"/>
+            </picture>
+
             <section class="main__main-section">
                 <div class="main-section__user-container">
-                    <img src="img/profil-pic.png" alt="Profil picture" class="user-image">
-                    <p class="user-name">Pseudo</p>
-                    <img src="img/official-tag.svg" alt="Official tag" class="user-tag">
+                    <div class="user__user-image--gradient">
+                        <img src="img/profil-pic.png" alt="Profil picture" class="user-image"></div>
+                    <div class="user-name__container">
+                        <p class="user-name">Pseudo</p>
+                        <img src="img/official-tag.svg" alt="Official tag" class="user-tag">
+                    </div>
                 </div>
                 <div class="main-section__stat-container">
                     <p class="stat__likes">191 298 likes</p>
                     <p class="stat__date">2 sem</p>
                 </div>
-                <p class="main-section__description">Longue description lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in lacus molestie, facilisis libero eget, sodales quam. Proin rhoncus dolor sed nulla varius, non vulputate erat vestibulum.</p>
+                <p class="main-section__description">Longue description lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Vestibulum in lacus molestie, facilisis libero eget, sodales quam. Proin rhoncus
+                    dolor sed nulla varius, non vulputate erat vestibulum.</p>
             </section>
 
             <form class="main__input-comment">
@@ -39,20 +58,24 @@
 
             <section class="main__comment-section">
                 <article class="comment-section__comment">
-                    <p class="user-name">Pseudo</p>
-                    <p class="user-comment">Je suis un commentaire bla bla bla la photo est trop bien je trouve ouais</p>
+                    <p class="user-name user-name--position">Pseudo</p>
+                    <p class="user-comment">Je suis un commentaire bla bla bla la photo est trop bien je trouve ouais
+                    </p>
                 </article>
                 <article class="comment-section__comment">
-                    <p class="user-name">Pseudo</p>
-                    <p class="user-comment">Je suis un commentaire bla bla bla la photo est trop bien je trouve ouais</p>
+                    <p class="user-name user-name--position">Pseudo</p>
+                    <p class="user-comment">Je suis un commentaire bla bla bla la photo est trop bien je trouve ouais
+                    </p>
                 </article>
                 <article class="comment-section__comment">
-                    <p class="user-name">Pseudo</p>
-                    <p class="user-comment">Je suis un commentaire bla bla bla la photo est trop bien je trouve ouais</p>
+                    <p class="user-name user-name--position">Pseudo</p>
+                    <p class="user-comment">Je suis un commentaire bla bla bla la photo est trop bien je trouve ouais
+                    </p>
                 </article>
                 <article class="comment-section__comment">
-                    <p class="user-name">Pseudo</p>
-                    <p class="user-comment">Je suis un commentaire bla bla bla la photo est trop bien je trouve ouais</p>
+                    <p class="user-name user-name--position">Pseudo</p>
+                    <p class="user-comment">Je suis un commentaire bla bla bla la photo est trop bien je trouve ouais
+                    </p>
                 </article>
             </section>
         </main>
@@ -61,7 +84,7 @@
                 <a href="#" class="nav__link"><img src="img/Home.svg" alt="Home Icon" class="nav__icon"></a>
                 <a href="#" class="nav__link"><img src="img/Loupe.svg" alt="Search Icon" class="nav__icon"></a>
                 <a href="#" class="nav__link"><img src="img/Camera.svg" alt="Camera Icon" class="nav__icon"></a>
-                <a href="#" class="nav__link"><img src="img/Heart.svg" alt="Heart Icon" class="nav__icon"></a>
+                <a href="#" class="nav__link heart"><img src="img/Heart.svg" alt="Heart Icon" class="nav__icon"></a>
                 <a href="#" class="nav__link"><img src="img/User.svg" alt="User Icon" class="nav__icon"></a>
             </nav>
         </footer>
