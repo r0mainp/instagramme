@@ -8,6 +8,9 @@ body{
     font-size: 1rem;
     color: black;
 }
+p{
+    margin: 0;
+}
 
 /*header start*/
     .page__header{
@@ -27,8 +30,82 @@ body{
 /*header end*/
 
 /*Main Start*/
+    .page__main{
+        padding-top: 50px;
+    }
 
     /*main-section Start*/
+    /*USER start*/
+    .main-section__user-container{
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+    }
+    .user__user-image--gradient{
+        display: inline-block;
+        background: linear-gradient(to right,#742BAD, 
+        #AF1BC7, #D71188, #0F0BE0);
+        border-radius: 9999px;
+        padding: 2px;
+        
+    }
+    .user-image{
+        display: block;
+        width: 30px;        
+    }
+    .user-name__container{
+        display: flex;
+        padding: 0 1rem;
+    }
+    .user-name{
+        font-weight: 700;
+    }
+    .user-tag{
+        padding: 0 0.5rem;
+    }
+    /*USER end*/
+
+    /*STAT start*/
+    .main-section__stat-container{
+        display: flex;
+        justify-content: space-between;
+        padding : 0.5rem 1rem;
+    }
+    .stat__likes{
+        font-weight: 700;
+    }
+    .stat__date{
+        color: #C5C5C5;
+    }
+    /*STAT end*/
+
+    /*Description start*/
+    .main-section__description{
+        padding: 0.5rem 1rem;
+    }
+    /*Description end*/
+
+    /*form start*/
+    .main__input-comment{
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-top: 1px solid #D1D1D1;
+        border-bottom: 1px solid #D1D1D1;
+    }
+    .input__icon{
+        margin-right: 0.5rem;
+        border: none;
+        color:#D1D1D1;
+    }
+    .input__comment-area{
+        border: none;
+        color:#D1D1D1;
+        width: 100%;
+    }
+    /*form end*/
+
     /*main-section End*/
 
     /*form start*/
