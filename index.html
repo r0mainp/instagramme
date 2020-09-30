@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagramme</title>
+    <link rel="icon" type="image/png" href="img/Logo.png" />
+    <script src="https://kit.fontawesome.com/395d2606a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Instagramme</h1>
-    </header>
-    <main>
-        <img>
-        <section>
-            <div>
-                <img>
-                <p></p>icon
-            </div>
-            <div>
-                <p></p>
-                <p></p>
-            </div>
-            <p></p>
-            <form>
-                icon
-                <input type="text">
+    <div class="page">
+        <header class="page__header">
+            <h1 class="header__title">Instagramme</h1>
+        </header>
+        <main>
+            <img src="" alt="" class="main__image">
+            <section class="main__main-section">
+                <div class="main-section__user-container">
+                    <img src="img/profil-pic.png" alt="Profil picture" class="user-image">
+                    <p class="user-name"></p>
+                    <img src="img/official-tag.svg" alt="Official tag" class="user-tag">
+                </div>
+                <div class="main-section__stat-container">
+                    <p class="stat__likes"></p>
+                    <p class="stat__date"></p>
+                </div>
+                <p class="main-section__description"></p>
+            </section>
+
+            <form class="main__input-comment">
+                <img src="img/heart-input.svg" alt="Heart Icon" class="input__icon">
+                <input type="text" class="input__comment-area">
             </form>
-            <section>
-                <article>
-                    <p></p>
-                    <p></p>
+
+
+            <section class="main__comment-section">
+                <article class="comment-section__comment">
+                    <p class="user-name"></p>
+                    <p class="user-comment"></p>
+                </article>
+                <article class="comment-section__comment">
+                    <p class="user-name"></p>
+                    <p class="user-comment"></p>
+                </article>
+                <article class="comment-section__comment">
+                    <p class="user-name"></p>
+                    <p class="user-comment"></p>
+                </article>
+                <article class="comment-section__comment">
+                    <p class="user-name"></p>
+                    <p class="user-comment"></p>
                 </article>
             </section>
-        </section>
-        <footer>
-            <nav>
-                <a href="#">icon</a>
+        </main>
+        <footer class="main__footer">
+            <nav class="footer__nav">
+                <a href="#" class="nav__link"><img src="img/Home.svg" alt="Home Icon" class="nav__icon"></a>
+                <a href="#" class="nav__link"><img src="img/Loupe.svg" alt="Search Icon" class="nav__icon"></a>
+                <a href="#" class="nav__link"><img src="img/Camera.svg" alt="Camera Icon" class="nav__icon"></a>
+                <a href="#" class="nav__link"><img src="img/Heart.svg" alt="Heart Icon" class="nav__icon"></a>
+                <a href="#" class="nav__link"><img src="img/User.svg" alt="User Icon" class="nav__icon"></a>
             </nav>
         </footer>
-    </main>
+
+    </div>
 </body>
+
 </html>
